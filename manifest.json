@@ -1,6 +1,6 @@
 {
     "name": "Popup Mini-Player for Youtube Music",
-    "description": "Why the fuck do I have to go into a completely seperate window/tab to skip a song?",
+    "description": "I don't want to open a browser to skip a song",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
