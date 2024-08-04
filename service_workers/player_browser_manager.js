@@ -3,7 +3,7 @@ console.log("Starting service worker player_browser_manager.js")
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   console.log("Received message from player: ", message)
-  chrome.tabs.query({audible: true}, (tabs) => {
+  chrome.tabs.query({audible: true, url: "https://music.youtube.com/*"}, (tabs) => {
     chrome.tabs.sendMessage(tabs[0].id, message)
   })
 })
