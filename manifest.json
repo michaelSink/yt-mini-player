@@ -1,0 +1,26 @@
+{
+    "name": "Popup Mini-Player for Youtube Music",
+    "description": "Why the fuck do I have to go into a completely seperate window/tab to skip a song?",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "tabs",
+      "windows"
+    ],
+    "background": {
+      "service_worker": "service_workers/player_browser_manager.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://music.youtube.com/*"
+            ],
+            "js": [
+                "scripts/browser_controls.js"
+            ]
+        }
+    ],
+    "action": {
+      "default_title": "Open Player"
+    }
+}
