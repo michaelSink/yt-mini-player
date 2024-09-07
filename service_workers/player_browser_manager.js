@@ -15,6 +15,6 @@ chrome.action.onClicked.addListener(() => {
     url: '../player_controls.html',
     type: 'popup',
     width: 300,
-    height: 100
+    height: 130
   });
 });

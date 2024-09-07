@@ -15,12 +15,18 @@ body {
   padding: 15px;
   width: 250px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .controls {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+#slider {
+  width: 100%;
 }
 
 button {
